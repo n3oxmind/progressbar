@@ -31,11 +31,13 @@ $ ./progressbar .sh "sleep 3" "[\t%15s]Output"   # printf tab and right alignmen
 You can add and printf string format between square brackets `[]` as a 2nd argument.
 
 ### Using progressbar.sh from inside your script
-1. Add progressbar.sh to your script directory and make it executable.  
+1. Add 'progressbar.sh' to your script directory and make it executable.  
+```sh
 $ chmod +x progressbar.sh
+```
 2. Add this line to your script   
-source ~/path/to/progressbar.sh
+`source ~/path/to/progressbar.sh`
 3. call `progress_bar` function see examples bellow:  
-progress_bar "myfunction"  
-progress_bar "myfunction" "[%-20s]sometext"  
-progress_bar "myfunction" "[\t%20s]sometext"  
+`progress_bar "myfunction"`    
+`progress_bar "myfunction" "[%-20s]sometext"`    
+`progress_bar "myfunction" "[\t%20s]sometext"`  
